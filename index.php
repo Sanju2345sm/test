@@ -12,7 +12,7 @@
  * ====================================================================================
  *
  * @package GemFramework 
- * @author KBRmedia (http://gempixel.com) @license http://gempixel.com/license
- * @link http://gempixel.com  
+ * @author KBRmedia (http://example.com) @license http://example.com/license
+ * @link http://example.com  
  * @since 1.0
  */
