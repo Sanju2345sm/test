@@ -1,7 +1,10 @@
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-		Options -Indexes
-	</IfModule>	
-    RewriteEngine On
-    RewriteRule ^(.*)$ public/$1 [L]
-</IfModule>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^contact?$ index.php?a=contact [L]
+RewriteRule "^(.*)\s(.*)$" /$1+$2 [L,NE]
+RewriteRule ^search/(.*)?$ index.php?a=search&search=$1 [L]
+RewriteRule ^category/(.*)?$ index.php?a=category&category=$1 [L]
+RewriteRule ^subject/(.*)?$ index.php?a=subject&subject=$1 [L]
+RewriteRule ^play/(.*)?$ index.php?a=play&play=$1 [L]
+RewriteRule ^embed/(.*)?$ index.php?a=embed&embed=$1 [L]
+RewriteRule ^page/(.*)?$ index.php?a=page&prefix=$1 [L]
